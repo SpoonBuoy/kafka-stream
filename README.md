@@ -46,6 +46,7 @@ go test ./... -v
  NOTE : Producer and Consumer run on two separate threads concurrently mimicking the real time producer and consumer servers
 
  Some Variables : 
+ ##### Change the variables mentioned below for various testing configurations except `test_id` which is auto-gen
  | Variable | Defined In |  Meaning|
 |----------|----------|----------|
 | BATCH_SIZE | models/Message.go | Defines the batch size |
