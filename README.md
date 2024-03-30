@@ -12,6 +12,7 @@ Before you start using or developing this project, make sure you meet the follow
   
 
 - **Kafka Broker**: A Kafka broker running in Docker. This can be installed and started with Docker Compose using the command:
+<br>[-d for Deamon mode]
   ```
   docker-compose up -d
   ```
