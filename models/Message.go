@@ -6,7 +6,7 @@ import (
 	"strconv"
 )
 
-var BATCH_SIZE = 15
+var BATCH_SIZE = 10
 
 type Message struct {
 	Pkey         uint64 `gorm:"primary_key"`

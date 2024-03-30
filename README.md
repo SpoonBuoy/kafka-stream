@@ -37,7 +37,8 @@ go mod tidy
 
 To run the tests and verify everything is set up correctly, use the following command:
 <br><br>
-NOTE: The test by default runs with timeout of 10 Minutes however if test fails due to blocking database operations, set the timeout flag -timeout=9999h in the below command
+#### NOTE: The test by default runs with timeout of 10 Minutes however if test fails due to blocking database operations, set the timeout flag -timeout=9999h in the below command or try with lesser BATCH_SIZE  (<10)
+  #### A single database write takes >=200ms. In order to complete a test in time `t secs`, then this condition has to be set true `BATCH_SIZE * totalBatches <= 5*t`
 ```
 go test ./... -v
 ```
