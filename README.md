@@ -6,8 +6,8 @@ Before you start using or developing this project, make sure you meet the follow
 
 - **Clone**: 
   ```
-  git clone 
-  cd msg-stream
+  git clone https://github.com/SpoonBuoy/kafka-stream.git
+  cd kafka-stream
   ```
   
 
@@ -35,6 +35,8 @@ go mod tidy
 ## Running Tests
 
 To run the tests and verify everything is set up correctly, use the following command:
+<br><br>
+NOTE: The test by default runs with timeout of 10 Minutes however if test fails due to blocking database operations, set the timeout flag -timeout=9999h in the below command
 ```
 go test ./... -v
 ```
